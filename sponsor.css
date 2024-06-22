@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bree+Serif&family=Metal+Mania&display=swap');
+*{
+    padding: 0;
+    margin: 0%;
+}
+body {
+    animation: theme 10s linear infinite;
+    &:after,
+    &:before {
+        content: '';
+        display: block;
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        width: 100vw;  
+        height: 100vh; 
+        width: 100vmax;
+        height: 100vmax;
+        background: rgba(0,0,0,0.05);
+        animation: background 90s linear infinite;
+    }
+    &:after {
+        left: 15vw;
+    }
+
+    &:before {
+        right: 15vw;
+        animation-delay: -30s;
+        animation-direction: reverse;
+    }
+}
+
+@keyframes theme {
+    0% {
+        background: #98deb0;
+    }
+    
+    16% {
+        background: #7bcfca;
+    }
+    
+    33% {
+        background: #59D4E1;
+    }
+    
+    50% {
+        background: #65bde0;
+    }
+    
+    66% {
+        background: #e27d91;
+    }    
+    
+    83% {
+        background: #e88778;
+    }
+
+    90%{
+        background: black;
+    }
+
+    100% {
+        background: #97deb0;
+    }
+}
+
+@keyframes background {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.titleSP {
+    /* Add your styles here */
+    color: rgb(201, 21, 21);
+    margin-top: 20px;
+    padding: 60px;
+    font-size: 34px;
+    font-family: 'Black Ops One', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align horizontally */
+    text-align: center;
+    font-weight: bold;
+}
+
+.spo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align horizontally */
+    justify-content: center; /* Center align vertically */
+}
+
+.spo img {
+    border-radius: 100%;
+}
+
+.event_sp {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center; /* Center align horizontally */
+    justify-content: center; /* Center align vertically */
+}
+
+.event_sp img {
+    border-radius: 60px;
+    width: 250px;
+    padding: 40px;
+    padding-top: 10px;
+}
+
+/* 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: 'smooth'
+      });
+    });
+  });
+
+  function prev() {
+    document.getElementById('slider-container').scrollLeft -= 270;
+}
+
+function next() {
+    document.getElementById('slider-container').scrollLeft += 270;
+}
+
+function autoSlide() {
+    next(); // Trigger "Next" button click
+}
+
+// Set the interval for auto sliding (e.g., every 3 seconds)
+setInterval(autoSlide, 3000);
+
+// Add your jQuery code here for the image zoom functionality
+$(".slider-container img").on("click", function () {
+    $(this).toggleClass('zoomed');
+    $(".overlay").toggleClass('active');
+});
+        const sliderContainer = document.querySelector('.slider');
+        const modal = document.getElementById('modal');
+        const modalImage = document.getElementById('modal-image');
+
+        function openImage(src) {
+            modalImage.src = src;
+            modal.style.display = 'flex';
+        }
+
+        function closeImage() {
+            modal.style.display = 'none';
+        }
+
+        // Add click event listeners to all images in the slider
+        const images = document.querySelectorAll('.slide img');
+        images.forEach((image) => {
+            image.addEventListener('click', () => {
+                openImage(image.src);
+            });
+        });
+
+        // Add click event listener to close the modal
+        modal.addEventListener('click', () => {
+            closeImage();
+        }); */

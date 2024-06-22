@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Metal+Mania&display=swap');
+
+* {
+    padding: 0;
+    margin: 0%;
+}
+
+body {
+    animation: theme 10s linear infinite;
+
+    &:after,
+    &:before {
+        content: '';
+        display: block;
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        width: 100vmax;
+        height: 100vmax;
+        background: rgba(0, 0, 0, 0.05);
+        animation: background 90s linear infinite;
+    }
+
+    &:after {
+        left: 15vw;
+    }
+
+    &:before {
+        right: 15vw;
+        animation-delay: -30s;
+        animation-direction: reverse;
+    }
+}
+
+@keyframes theme {
+    0% {
+        background: #74C390;
+    }
+
+    16% {
+        background: #5DBDB6;
+    }
+
+    33% {
+        background: #59D4E1;
+    }
+
+    50% {
+        background: #51BCE8;
+    }
+
+    66% {
+        background: #FA5374;
+    }
+
+    83% {
+        background: #E46653;
+    }
+
+    90% {
+        background: black;
+    }
+
+    100% {
+        background: #74C390;
+    }
+}
+
+@keyframes background {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.ourteam {
+    margin-bottom: 0;
+    /* Add this line to remove margin-bottom */
+}
+
+.org-commitee {
+    margin-top: -120px;
+    /* Adjust the value as needed */
+}
+
+.center-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.ourteam {
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.img1 {
+    border-radius: 100%;
+}
+
+.img2 {
+    border-radius: 100%;
+    width: 60%;
+    display: block;
+    /* Add this to make it a block-level element */
+    margin: 0 auto;
+}
+
+.card-text {
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
+    margin-bottom: 0%;
+    text-align: center;
+}
+
+.org-commitee {
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 50px;
+}
+
+.organising .container {
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    /* Create 4 equal-width columns */
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.organising .container .card-title,
+.card-text {
+    overflow: hidden;
+}
+
+.card-title {
+    font-family: 'Bree Serif', serif;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.partition {
+    margin-top: 70px;
+}
+
+.core-commitee {
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px;
+}
